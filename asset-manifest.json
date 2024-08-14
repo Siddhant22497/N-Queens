@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/N-Queens/static/css/main.ad0f9436.css",
+    "main.js": "/N-Queens/static/js/main.9d2c22a8.js",
+    "static/js/453.57fa7b67.chunk.js": "/N-Queens/static/js/453.57fa7b67.chunk.js",
+    "index.html": "/N-Queens/index.html",
+    "main.ad0f9436.css.map": "/N-Queens/static/css/main.ad0f9436.css.map",
+    "main.9d2c22a8.js.map": "/N-Queens/static/js/main.9d2c22a8.js.map",
+    "453.57fa7b67.chunk.js.map": "/N-Queens/static/js/453.57fa7b67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad0f9436.css",
+    "static/js/main.9d2c22a8.js"
+  ]
+}
