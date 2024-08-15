@@ -35,7 +35,7 @@ function App() {
         <p className='flex justify-center mt-2 text-2xl font-bold'> {number} X {number} Queens</p>
         <div className='flex  flex-row  justify-evenly gap-2 mt-2'>
           <button onClick={increaseNumber} className="border-black bg-purple-300 basis-1/5 hover:bg-purple-500"
-          >+1</button>
+          disabled="number==20">+1</button>
           <button onClick={decreaseNumber} className="bg-purple-300 basis-1/5 hover:bg-purple-500" disabled={number==4}>-1</button>
           <button onClick={reset} className="bg-purple-300 basis-1/5 hover:bg-purple-500">Reset</button>
           <button className="bg-purple-300 basis-1/5 hover:bg-purple-500" onClick={showscreenGame}>Submit </button>
