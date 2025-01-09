@@ -12,10 +12,8 @@ function Game({ n }) {
     const globalCount = useRef(0);
 
     if (globalCount == 0) {
-        console.log("Global counter in top : " + globalCount);
         for (let i = 0; i < n; ++i) {
             let board2 = [];
-            console.log("here we again");
             for (let j = 0; j < n; ++j) {
                 board2.push(".");
             }
@@ -147,8 +145,6 @@ function Game({ n }) {
             globalCount.current -= 1;
         }
         setBoard(newBoard);
-        console.log("Save Tiles");
-        console.log(board);
     }
 
      const  submit=()=>{
@@ -156,12 +152,7 @@ function Game({ n }) {
         let result = toBeChecked();
         if (result == 1) setUwin(1);
         else setUwin(0);
-        console.log("Submit: ");
-        console.log(board);
-        // console.log(uwin);
-        console.log("globalCount: " + globalCount.current);
-
-
+    
     }
     async function reset() {
         setSubmitted(0);
@@ -177,7 +168,6 @@ function Game({ n }) {
             }
         }
         setBoard(newBoard);
-        console.log(board);
     }
 
 
@@ -202,11 +192,11 @@ function Game({ n }) {
                     ))}
                 </tbody>
             </table>
-            <div className='flex justify-center mt-2'><button className="m-auto bg-green-700" onClick={submit}>Submit</button></div>
-            <div className='flex justify-center mt-2' ><button className='bg-red-700' onClick={reset}>Reset</button></div>
+            <div className='flex justify-center mt-2'><button className="m-auto bg-green-500 hover:bg-green-600 rounded-md hover:scale-110 w-[5vw]" onClick={submit}>Submit</button></div>
+            <div className='flex justify-center mt-[3vh]' ><button className='bg-red-500 hover:bg-red-700 rounded-md w-[5vw] hover:scale-110' onClick={reset}>Reset</button></div>
             <p className="font-bold flex justify-center">
                 {
-                    uwin && issubmitted ? `Congratulations! You've successfully solved the ${n}-Queens puzzle!` : ""
+                    uwin && issubmitted ? `Congratulations! You've successfully solved one of the combinations of the ${n}-Queens puzzle!` : ""
                 }
             </p>
             <p className="font-bold flex justify-center">{
