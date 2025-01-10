@@ -184,7 +184,7 @@ function Game({ n }) {
                                     (i % 2 === 0 && j % 2 === 0) || (i % 2 !== 0 && j % 2 !== 0)
                                       ? 'bg-gray-600'
                                       : 'bg-white'
-                                  }`}><td key={i + ' - ' + j + ' key-row-data'} id={i + ' - ' + j + ' id'} className='rounded border-black border-2 w-16 h-10 text-center font-bold text-2xl'></td></button>
+                                  }`}><td key={i + ' - ' + j + ' key-row-data'} id={i + ' - ' + j + ' id'} className='rounded  border-black border-[0.2vw] w-[4vw] h-[4vw]  text-center font-bold text-[2vw]'></td></button>
                             ))} 
 
                         </tr>
@@ -192,14 +192,14 @@ function Game({ n }) {
                     ))}
                 </tbody>
             </table>
-            <div className='flex justify-center mt-2'><button className="m-auto bg-green-500 hover:bg-green-600 rounded-md hover:scale-110 w-[5vw]" onClick={submit}>Submit</button></div>
-            <div className='flex justify-center mt-[3vh]' ><button className='bg-red-500 hover:bg-red-700 rounded-md w-[5vw] hover:scale-110' onClick={reset}>Reset</button></div>
+            <div className='flex justify-center mx-auto mt-[2vh] h-[5.3vh]'><button className=" bg-green-500 hover:bg-green-600 rounded-md hover:scale-110 text-[1.5vw]" onClick={submit}>Submit</button></div>
+            <div className='flex justify-center mt-[3vh] mx-auto h-[5.3vh]' ><button className='bg-red-500 hover:bg-red-700 rounded-md  hover:scale-110 text-[1.5vw]' onClick={reset}>Reset</button></div>
             <p className="font-bold flex justify-center">
                 {
                     uwin && issubmitted ? `Congratulations! You've successfully solved one of the combinations of the ${n}-Queens puzzle!` : ""
                 }
             </p>
-            <p className="font-bold flex justify-center">{
+            <p className="font-bold flex justify-center text-[2vw]" >{
                 !uwin && issubmitted ? "Wrong Combination. Try again!" : ""
             }
             </p>
