@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/N-Queens/static/css/main.7315965e.css",
-    "main.js": "/N-Queens/static/js/main.1c463fe5.js",
+    "main.css": "/N-Queens/static/css/main.ba83299e.css",
+    "main.js": "/N-Queens/static/js/main.c337edde.js",
     "static/js/453.57fa7b67.chunk.js": "/N-Queens/static/js/453.57fa7b67.chunk.js",
     "index.html": "/N-Queens/index.html",
-    "main.7315965e.css.map": "/N-Queens/static/css/main.7315965e.css.map",
-    "main.1c463fe5.js.map": "/N-Queens/static/js/main.1c463fe5.js.map",
+    "main.ba83299e.css.map": "/N-Queens/static/css/main.ba83299e.css.map",
+    "main.c337edde.js.map": "/N-Queens/static/js/main.c337edde.js.map",
     "453.57fa7b67.chunk.js.map": "/N-Queens/static/js/453.57fa7b67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7315965e.css",
-    "static/js/main.1c463fe5.js"
+    "static/css/main.ba83299e.css",
+    "static/js/main.c337edde.js"
   ]
 }
